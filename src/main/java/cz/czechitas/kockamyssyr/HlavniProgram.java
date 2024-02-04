@@ -45,6 +45,7 @@ public class HlavniProgram {
     }
 
     //region Jednoduchá varianta
+
     /**
      * Jednoduchá varianta – Tom jde na souřadnice, kde na začátku byl Jerry. Když tam dorazí, podívá se znovu, kde je
      * Jerry a vyrazí jeho směrem. Opakuje tak dlouho, odkud Jerryho nechytí.
@@ -77,6 +78,7 @@ public class HlavniProgram {
     //endregion
 
     //region Efektivnější varianta
+
     /**
      * Efektivnější varianta – Tom jde na souřadnice, kde je Jerry. Pokud mu jde Jerry naproti, skončí Tom cetsu už
      * v okamžiku, kdy je ve stejném sloupci/řádku.
@@ -117,6 +119,7 @@ public class HlavniProgram {
     //endregion
 
     //region Vyhýbání se stromům
+
     /**
      * Efektivnější varianta, ve které se Tom zároveň vyhýbá stromům.
      */
