@@ -1,6 +1,6 @@
 package cz.czechitas.kockamyssyr;
 
-import cz.czechitas.kockamyssyr.api.*;
+import dev.czechitas.java1.kockamyssyr.api.*;
 
 import java.awt.*;
 import java.util.Random;
@@ -52,6 +52,7 @@ public class HlavniProgram {
         vytvorSyr();
         vytvorJitrnici();
     }
+
     public Tree vytvorStrom() {
         return new Tree(vytvorNahodnyBod());
     }
