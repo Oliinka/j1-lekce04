@@ -43,6 +43,21 @@ public class HlavniProgram {
 
     public void chytMys() {
         // TODO: Sem vepište svůj program
+      int horizontalniPosun = jerry.getX()-tom.getX();
+       System.out.println(horizontalniPosun);
+       if(horizontalniPosun <0){
+           tom.turnRight();
+           tom.turnRight();
+           horizontalniPosun = Math.abs(horizontalniPosun);
+       }
+       int vertikalniPosun = jerry.getX()-tom.getX();
+        System.out.println(vertikalniPosun);
+        if(vertikalniPosun <0){
+            tom.turnRight();
+            tom.turnRight();
+            vertikalniPosun = Math.abs(vertikalniPosun);
+        }
+
     }
 
     public void vytvorVeci(int pocetStromu) {
