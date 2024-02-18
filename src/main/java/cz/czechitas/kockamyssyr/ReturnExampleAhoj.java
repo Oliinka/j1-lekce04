@@ -19,3 +19,4 @@ public class ReturnExampleAhoj {
         pozdravJmenem("Olga");
     }
 }
+

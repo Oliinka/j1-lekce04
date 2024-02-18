@@ -18,4 +18,6 @@ public class ExamplePocetDnuVMesici {
     public void vypisPocetDnuVMesici(int mesic) {
         System.out.println(pocetDnuVMesici(mesic));
     }
+
+
 }

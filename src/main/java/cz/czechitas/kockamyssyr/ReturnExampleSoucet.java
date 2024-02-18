@@ -4,6 +4,9 @@ public class ReturnExampleSoucet {
     /* vypise zobrazeni*/
     public static void main(String[] args) {
         new ReturnExampleSoucet().vypisSoucetCisel(3, 5);
+
+
+
     }
 
     public int sectiCisla(int a, int b) {
