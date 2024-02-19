@@ -3,6 +3,8 @@ package cz.czechitas.kockamyssyr;
 public class ReturnExamplePodil {
 
     public static void main(String[] args) {
+        new ReturnExamplePodil().vypisPodilCisel(15,0); //SKOK A NAVRAT
+
         ReturnExamplePodil instance = new ReturnExamplePodil();
         instance.vypisPodilCisel(15, 5);
         instance.vypisPodilCisel(15, 0);

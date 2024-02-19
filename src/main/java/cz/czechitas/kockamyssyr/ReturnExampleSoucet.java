@@ -5,8 +5,6 @@ public class ReturnExampleSoucet {
     public static void main(String[] args) {
         new ReturnExampleSoucet().vypisSoucetCisel(3, 5);
 
-
-
     }
 
     public int sectiCisla(int a, int b) {
@@ -32,10 +30,12 @@ public class ReturnExampleSoucet {
 
         //nebo je mozne metodu vlozit do volani jine metody
         System.out.println(sectiCisla(8, 15));
-        /*kdy mam void muzu nakonec napsat return, hodnota je tam vlozena
-         * automaticky, ALE nekdy muzu chtit any se tam v nejakem reteci
+        /*kdyz mam void muzu nakonec napsat return, hodnota je tam vlozena
+         * automaticky, ALE nekdy muzu chtit aby se tam v nejakem reteci
          * hodnota vratila driv nez na konci, proto je tam ta moznost*/
+        System.out.println(sectiCisla(8, 15,5));
         return;
+
     }
 
 }
