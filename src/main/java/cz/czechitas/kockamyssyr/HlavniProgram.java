@@ -42,23 +42,36 @@ public class HlavniProgram {
     }
 
     public void chytMys() {
-        // TODO: Sem vepište svůj program
-      int horizontalniPosun = jerry.getX()-tom.getX();
-       System.out.println(horizontalniPosun);
-       if(horizontalniPosun <0){
-           tom.turnRight();
-           tom.turnRight();
-           horizontalniPosun = Math.abs(horizontalniPosun);
-       }
-       int vertikalniPosun = jerry.getX()-tom.getX();
-        System.out.println(vertikalniPosun);
-        if(vertikalniPosun <0){
-            tom.turnRight();
-            tom.turnRight();
-            vertikalniPosun = Math.abs(vertikalniPosun);
-        }
 
+        while (jerry.isAlive()) {
+
+            int horizontalniPosun = jerry.getX() - tom.getX();
+            System.out.println(horizontalniPosun);
+            if (horizontalniPosun < 0) {
+                tom.turnRight();
+                tom.turnRight();
+                horizontalniPosun = Math.abs(horizontalniPosun);
+            }
+            tom.moveForward(horizontalniPosun);
+
+            if (tom.getOrientation() == PlayerOrientation.LEFT) {
+                tom.turnRight();
+            } else {
+                tom.turnLeft();
+            }
+
+            int vertikalniPosun = tom.getY() - jerry.getY();
+            System.out.println(vertikalniPosun);
+            if (vertikalniPosun < 0) {
+                tom.turnRight();
+                tom.turnRight();
+                vertikalniPosun = Math.abs(vertikalniPosun);
+            }
+            tom.moveForward(vertikalniPosun);
+        }
     }
+        // TODO: Sem vepište svůj program
+
 
     public void vytvorVeci(int pocetStromu) {
         for (int i = 0; i < pocetStromu; i++) {
